@@ -9,8 +9,8 @@ result = s.connect_ex((HOST,PORT))
 
 
 if result == 0:
-   print "Port on another computer is open. Running Client Program."
+   print("Port on another computer is open. Running Client Program.")
    subprocess.call(['python','client.py'])
 else:
-   print "Port on another computer is not open. Running Server Program."
+   print("Port on another computer is not open. Running Server Program.")
    subprocess.call(['python','server.py'])
